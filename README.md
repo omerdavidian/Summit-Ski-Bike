@@ -70,19 +70,19 @@ Cloudflare currently hosts DNS; AWS holds registration. Preserve the full zone a
 
 ## Deployment status (2026-11-07)
 
-GitHub main is deployed at https://summit-ski-bike.vercel.app on the correct Vercel Hobby team. Neon Free `summit-archive` is connected through Vercel and both schema tables are initialized. The Resend sending subdomain is verified; a sending-only key restricted to that subdomain is stored in Vercel. Free Turnstile is configured for the apex, www, and stable Vercel address. Production settings exclude localhost. Historical inquiries remain in private local exports; no historical notifications have been sent. Custom-domain DNS and HostGator remain unchanged.
+GitHub main is deployed at https://summit-ski-bike.vercel.app on the correct Vercel Hobby team. Neon Free `summit-archive` is connected through Vercel and both schema tables are initialized. The Resend sending subdomain is verified; a sending-only key restricted to that subdomain is stored in Vercel. Free Turnstile is configured for the apex, www, and stable Vercel address. Production settings exclude localhost. Historical inquiries remain in private local exports; no historical notifications have been sent. The owner approved website and mail cutover. Apex/www now point DNS-only to the exact Vercel target; Cloudflare Email Routing is enabled and ready. HostGator cancellation remains separate.
 
-Controlled live test `SSB-22BBB2A0` passed: a real Turnstile check, one persisted inquiry, one owner delivery ID, and one client delivery ID. Resend reports both messages delivered to the approved Gmail address. Retrying the same saved inquiry after a provider rejection did not create another inquiry. Actual mailbox rendering/replies and explicit token replay rejection remain to be checked. `SITE_URL` temporarily uses the stable Vercel address so email logos work before domain cutover. Change it to the apex after cutover.
+Controlled live test `SSB-22BBB2A0` passed: a real Turnstile check, one persisted inquiry, one owner delivery ID, and one client delivery ID. Resend reports both messages delivered to the approved Gmail address. Retrying the same saved inquiry after a provider rejection did not create another inquiry. Actual mailbox rendering/replies and explicit token replay rejection remain to be checked. `SITE_URL` is now set to the canonical apex.
 
-Cloudflare forwarding destination `summitskibike@gmail.com` is verified. The exact-address rule for `info@summitskibike.com` is saved (rule `1a40349881d4481698c01941b9c9ead5`). Zone routing remains disabled and incoming MX records have not changed; forwarding begins only after mail cutover. No catch-all was created.
+Cloudflare forwarding destination `summitskibike@gmail.com` is verified. The exact-address rule for `info@summitskibike.com` is saved (rule `1a40349881d4481698c01941b9c9ead5`). Zone routing is enabled; public MX records now use Cloudflare. Root SPF authorizes Cloudflare routing. Independent forwarding delivery remains to be checked. No catch-all was created.
 
 ## Remaining release gates
 
 - Review the preview and branded email designs.
-- Verify inbound forwarding and mailbox preservation.
+- Verify inbound forwarding. The owner confirmed old HostGator mailbox messages are not needed.
 - Restore-test the complete backup; reconcile private historical exports if importing.
 - Verify email-client rendering/replies and CAPTCHA token replay rejection.
-- Decide whether to retain newsletter signup; the existing Mailchimp integration is not configured and currently reports unavailability.
-- Approve the production domain switch, then retire HostGator after independent site/mail checks.
+- Newsletter signup was replaced with an archive/contact message at the owner's request; no Mailchimp service is required.
+- Complete custom-domain HTTPS and independent mail checks before retiring HostGator.
 
 Customer browser appearance has been checked locally. Actual Gmail/Outlook/Apple Mail rendering and delivery still require controlled email tests. Email logos use PNG for broad mail-client compatibility; website photography uses optimized WebP where it saves space.

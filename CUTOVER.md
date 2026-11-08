@@ -1,6 +1,6 @@
 # Prepared cutover
 
-Prepared November 7, 2026. Await final owner approval before website or receiving-mail DNS changes.
+Owner approved website and mail cutover November 7, 2026 and confirmed old mailbox messages are not needed. DNS cutover has been applied; final HTTPS and independent mail checks are in progress.
 
 ## Verified replacement
 
@@ -11,7 +11,7 @@ Prepared November 7, 2026. Await final owner approval before website or receivin
 - Controlled inquiry `SSB-22BBB2A0`: exactly one database row and both delivery IDs. Resend reports both test messages delivered to the approved Gmail address.
 - Both landing pages and all legal pages have no horizontal overflow after loading at 390px.
 - Resend sending subdomain is verified and uses a domain-restricted sending key.
-- Gmail destination is verified; Cloudflare rule `1a40349881d4481698c01941b9c9ead5` matches only `info@summitskibike.com` and forwards to `summitskibike@gmail.com`. Zone mail routing remains disabled.
+- Gmail destination is verified; Cloudflare rule `1a40349881d4481698c01941b9c9ead5` matches only `info@summitskibike.com` and forwards to `summitskibike@gmail.com`. Zone mail routing is enabled and ready.
 
 ## Website DNS targets
 
@@ -35,7 +35,7 @@ Preserve needed HostGator mailbox history before changing MX. The full WordPress
 3. Move incoming mail only when mailbox preservation is settled. Confirm forwarding from an independent sender and a reply from Gmail.
 4. Set Vercel `SITE_URL=https://summitskibike.com` and redeploy. Re-test the real contact flow and email logo URL on the custom domain.
 5. Confirm old URLs, redirects, legal pages, search, galleries, navigation, and both seasonal forms.
-6. Resolve newsletter preference; it is currently unavailable rather than silently accepting signups.
+6. Newsletter signup has been replaced by an archive contact message as approved.
 7. Retire HostGator only after independent site/mail checks and the owner's cancellation decision.
 
 ## Rollback
