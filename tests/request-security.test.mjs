@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readBody} from '../lib/http.mjs';
 import {validateContact} from '../lib/security.mjs';
 import newsletter from '../api/newsletter.mjs';
+import {createStore} from '../lib/store.mjs';
 
 test('preparsed request bodies still enforce size and object shape',async()=>{
  const req=body=>({method:'POST',headers:{'content-type':'application/json'},body});
@@ -22,4 +23,10 @@ test('retired newsletter cannot trigger subscriptions even if provider settings 
  let response;const headers={};const res={setHeader:(k,v)=>headers[k]=v,end:body=>response=JSON.parse(body)};
  newsletter({method:'POST',body:{email:'alex@example.com'}},res);
  assert.equal(res.statusCode,410);assert.equal(headers['Cache-Control'],'no-store');assert.match(response.error,/closed/);
+});
+test('an exhausted client cannot consume the shared daily mail allowance',async()=>{
+ const calls=[];
+ const sql=async(strings,...values)=>{const query=strings.join('?');calls.push({query,values});if(query.startsWith('SELECT'))return [];if(values[0]==='contact:client-hash')return [{used:6}];throw new Error('Daily allowance or inquiry storage must not be touched');};
+ await assert.rejects(createStore({},sql).accept({...input,id:input.submissionId},'fingerprint','client-hash'),{status:429});
+ assert.equal(calls.length,2);assert.ok(!calls.some(call=>call.query.includes('contact-day')));
 });

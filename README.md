@@ -2,6 +2,8 @@
 
 **Live:** https://summitskibike.com. See [LAUNCH-STATUS.md](LAUNCH-STATUS.md) for verified launch results, backups, and remaining HostGator cancellation scope.
 
+The completed [UI/UX and security audit](UI-SECURITY-AUDIT.md) records fixes, test evidence, and scope. Run `npm run audit:site` after building to verify page links, landmarks, and CSP hashes.
+
 Static recreation of the former Summit rental website, with a working contact backend and branded owner/customer email templates. The original design is retained; the archive notice reflects that rentals have ended.
 
 ## Local development
