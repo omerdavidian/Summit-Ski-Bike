@@ -1,5 +1,7 @@
 # Summit Ski & Bike
 
+**Live:** https://summitskibike.com. See [LAUNCH-STATUS.md](LAUNCH-STATUS.md) for verified launch results, backups, and remaining HostGator cancellation scope.
+
 Static recreation of the former Summit rental website, with a working contact backend and branded owner/customer email templates. The original design is retained; the archive notice reflects that rentals have ended.
 
 ## Local development
@@ -79,10 +81,10 @@ Cloudflare forwarding destination `summitskibike@gmail.com` is verified. The exa
 ## Remaining release gates
 
 - Review the preview and branded email designs.
-- Verify inbound forwarding. The owner confirmed old HostGator mailbox messages are not needed.
+- Inbound forwarding was verified in Gmail. The owner confirmed old HostGator mailbox messages are not needed.
 - Restore-test the complete backup; reconcile private historical exports if importing.
 - Verify email-client rendering/replies and CAPTCHA token replay rejection.
 - Newsletter signup was replaced with an archive/contact message at the owner's request; no Mailchimp service is required.
-- Complete custom-domain HTTPS and independent mail checks before retiring HostGator.
+- Custom-domain HTTPS and receiving-mail checks passed. HostGator cancellation remains separate.
 
 Customer browser appearance has been checked locally. Actual Gmail/Outlook/Apple Mail rendering and delivery still require controlled email tests. Email logos use PNG for broad mail-client compatibility; website photography uses optimized WebP where it saves space.

@@ -1,6 +1,6 @@
 # Prepared cutover
 
-Owner approved website and mail cutover November 7, 2026 and confirmed old mailbox messages are not needed. DNS cutover has been applied; final HTTPS and independent mail checks are in progress.
+Owner approved website and mail cutover November 7, 2026 and confirmed old mailbox messages are not needed. DNS cutover is complete; HTTPS, main-domain form delivery, and Gmail forwarding checks passed. See `LAUNCH-STATUS.md` for results. The steps below preserve the executed procedure and rollback reference.
 
 ## Verified replacement
 
