@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev --host 127.0.0.1",
-    "build": "astro build",
+    "build": "astro build && node scripts/secure-html.mjs",
     "preview": "node scripts/preview.mjs",
     "test": "node --test tests/*.test.mjs",
-    "audit:assets": "python scripts/verify_assets.py"
+    "audit:assets": "python scripts/verify_assets.py",
+    "audit:site": "python scripts/verify_site.py"
   },
   "engines": {
     "node": ">=22.23.4"

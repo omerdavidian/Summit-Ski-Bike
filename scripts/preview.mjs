@@ -14,8 +14,9 @@ createServer(async(req,res)=>{
       const email=renderEmail(kind,{...sample,season:url.searchParams.get('season')==='summer'?'summer':'winter'},{siteUrl:`http://${host}:${port}`});
       res.setHeader('Content-Type','text/html; charset=utf-8');res.setHeader('X-Robots-Tag','noindex, nofollow');res.end(email.html);return;
     }
-    if(/^\/api\/(contact|newsletter|config)$/.test(url.pathname)){
-      const {default:handler}=await import(`../api/${url.pathname.split('/').at(-1)}.mjs`);await handler(req,res);return;
+    const api=url.pathname.match(/^\/api\/(contact|newsletter|config)\/?$/);
+    if(api){
+      const {default:handler}=await import(`../api/${api[1]}.mjs`);await handler(req,res);return;
     }
     const target=path.resolve(root,'.'+decodeURIComponent(url.pathname));
     if(target!==root&&!target.startsWith(root+path.sep)){res.statusCode=403;res.end();return;}

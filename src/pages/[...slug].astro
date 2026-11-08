@@ -17,6 +17,7 @@ const page = pages[`../content/${slug}.json`];
   <body class={page.bodyClass} data-season={page.season}>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <Fragment set:html={page.body} />
+    <noscript><p style="padding:20px;text-align:center">For questions, email <a href="mailto:summitskibike@gmail.com">summitskibike@gmail.com</a>. JavaScript is required for the contact form and media viewer.</p></noscript>
     <script src="../scripts/site.js"></script>
   </body>
 </html>
