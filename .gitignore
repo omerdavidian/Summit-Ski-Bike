@@ -1,0 +1,9 @@
+node_modules/
+.env*
+!.env.example
+.vercel/
+private-backup/
+__pycache__/
+dist/
+.astro/
+local-data/

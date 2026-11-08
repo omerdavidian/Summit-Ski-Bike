@@ -1,0 +1,22 @@
+---
+export function getStaticPaths() {
+  return [undefined,'touring-bike','disclaimer','privacy-policy','terms-and-conditions'].map(slug=>({params:{slug}}));
+}
+const slug = Astro.params.slug || 'home';
+const pages = import.meta.glob('../content/*.json', {eager:true, import:'default'});
+const page = pages[`../content/${slug}.json`];
+---
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Fragment set:html={page.head} />
+    <link rel="stylesheet" href="/site.css" />
+  </head>
+  <body class={page.bodyClass} data-season={page.season}>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <Fragment set:html={page.body} />
+    <script src="../scripts/site.js"></script>
+  </body>
+</html>

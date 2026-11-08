@@ -1,0 +1,679 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "astro",
+  "trailingSlash": true,
+  "functions": {
+    "api/*.mjs": {
+      "maxDuration": 60
+    }
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "s",
+          "value": "(?<term>.+)"
+        }
+      ],
+      "destination": "/search/?q=:term",
+      "permanent": false
+    },
+    {
+      "source": "/author/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/litespeed/avatar/cd708677879b24b4ed0965c7a7005301.jpg",
+      "destination": "/wp-content/litespeed/avatar/cd708677879b24b4ed0965c7a7005301.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/litespeed/avatar/9ed7399e0d6f0635250cd9ee2ed80627.jpg",
+      "destination": "/wp-content/litespeed/avatar/9ed7399e0d6f0635250cd9ee2ed80627.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Winter-Park.webp",
+      "destination": "/wp-content/uploads/2025/07/Winter-Park.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/winter-landscape-panorama-of-the-ski-resort-with-2025-03-08-14-51-26-utc.webp",
+      "destination": "/wp-content/uploads/2025/07/winter-landscape-panorama-of-the-ski-resort-with-2025-03-08-14-51-26-utc.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Vail.webp",
+      "destination": "/wp-content/uploads/2025/07/Vail.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Steamboat.webp",
+      "destination": "/wp-content/uploads/2025/07/Steamboat.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296.webp",
+      "destination": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-768x512.webp",
+      "destination": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-768x512.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-300x200.webp",
+      "destination": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-300x200.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-1536x1024.webp",
+      "destination": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-1536x1024.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-1024x683.webp",
+      "destination": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-1024x683.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Ski-bike-6.webp",
+      "destination": "/wp-content/uploads/2025/07/Ski-bike-6.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Ski-bike-3.webp",
+      "destination": "/wp-content/uploads/2025/07/Ski-bike-3.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Ski-bike-3-768x616.webp",
+      "destination": "/wp-content/uploads/2025/07/Ski-bike-3-768x616.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Ski-bike-3-300x241.webp",
+      "destination": "/wp-content/uploads/2025/07/Ski-bike-3-300x241.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Ski-bike-3-1024x821.webp",
+      "destination": "/wp-content/uploads/2025/07/Ski-bike-3-1024x821.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Ski-bike-1.webp",
+      "destination": "/wp-content/uploads/2025/07/Ski-bike-1.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-scaled.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-scaled.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-771x1024.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-771x1024.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-768x1020.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-768x1020.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-226x300.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-226x300.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-1542x2048.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-1542x2048.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-1157x1536.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-1157x1536.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240324_202656954-scaled.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240324_202656954-scaled.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240324_202656954-768x578.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240324_202656954-768x578.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240324_202656954-300x226.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240324_202656954-300x226.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240324_202656954-2048x1542.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240324_202656954-2048x1542.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240324_202656954-1536x1157.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240324_202656954-1536x1157.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240324_202656954-1024x771.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240324_202656954-1024x771.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240301_2046469872.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240301_2046469872.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-768x768.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-768x768.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-300x300.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-300x300.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-2048x2048.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-2048x2048.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-1536x1536.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-1536x1536.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-150x150.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-150x150.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-1024x1024.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-1024x1024.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20230426_182355014-EDIT2-scaled.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20230426_182355014-EDIT2-scaled.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/PXL_20230426_182355014-EDIT2-1024x693.webp",
+      "destination": "/wp-content/uploads/2025/07/PXL_20230426_182355014-EDIT2-1024x693.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Map-Satellite-Resorts-scaled.webp",
+      "destination": "/wp-content/uploads/2025/07/Map-Satellite-Resorts-scaled.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side.webp",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white.webp",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-768x166.webp",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-768x166.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-300x65.webp",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-300x65.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-1024x221.webp",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-1024x221.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side-768x161.webp",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side-768x161.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side-300x63.webp",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side-300x63.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1024x215.webp",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1024x215.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1.png",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1-1024x215.png.webp",
+      "destination": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1-1024x215.png.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Keystone.webp",
+      "destination": "/wp-content/uploads/2025/07/Keystone.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/exported_792D595C-0297-44B2-B7EB-4055BA4A9814-Copy-scaled.webp",
+      "destination": "/wp-content/uploads/2025/07/exported_792D595C-0297-44B2-B7EB-4055BA4A9814-Copy-scaled.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/DSC03629.webp",
+      "destination": "/wp-content/uploads/2025/07/DSC03629.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/DSC03606.webp",
+      "destination": "/wp-content/uploads/2025/07/DSC03606.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/DSC03606-768x1152.webp",
+      "destination": "/wp-content/uploads/2025/07/DSC03606-768x1152.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/DSC03606-683x1024.webp",
+      "destination": "/wp-content/uploads/2025/07/DSC03606-683x1024.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/DSC03606-200x300.webp",
+      "destination": "/wp-content/uploads/2025/07/DSC03606-200x300.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/DSC03606-1365x2048.webp",
+      "destination": "/wp-content/uploads/2025/07/DSC03606-1365x2048.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/DSC03606-1024x1536.webp",
+      "destination": "/wp-content/uploads/2025/07/DSC03606-1024x1536.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/DALL\u00b7E-2024-12-21-17.15.39-A-vast-open-field-of-snow-stretching-as-far-as-the-eye-can-see-with-no-trees-or-obstacles-in-sight.-The-snow-is-smooth-and-undisturbed-creating-a_.webp",
+      "destination": "/wp-content/uploads/2025/07/DALL\u00b7E-2024-12-21-17.15.39-A-vast-open-field-of-snow-stretching-as-far-as-the-eye-can-see-with-no-trees-or-obstacles-in-sight.-The-snow-is-smooth-and-undisturbed-creating-a_.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/cropped-Logo-Circle-32x32.png",
+      "destination": "/wp-content/uploads/2025/07/cropped-Logo-Circle-32x32.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/cropped-Logo-Circle-270x270.png",
+      "destination": "/wp-content/uploads/2025/07/cropped-Logo-Circle-270x270.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/cropped-Logo-Circle-192x192.png",
+      "destination": "/wp-content/uploads/2025/07/cropped-Logo-Circle-192x192.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Copper-Mountain.webp",
+      "destination": "/wp-content/uploads/2025/07/Copper-Mountain.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Breckenridge.webp",
+      "destination": "/wp-content/uploads/2025/07/Breckenridge.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/bg-gallery-new.png",
+      "destination": "/wp-content/uploads/2025/07/bg-gallery-new.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/Beaver-Creek.webp",
+      "destination": "/wp-content/uploads/2025/07/Beaver-Creek.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/a-magical-switzerland-place-in-world-2025-02-19-23-57-04-utc-copy-scaled.webp",
+      "destination": "/wp-content/uploads/2025/07/a-magical-switzerland-place-in-world-2025-02-19-23-57-04-utc-copy-scaled.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/A-Basin.webp",
+      "destination": "/wp-content/uploads/2025/07/A-Basin.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/434381071_367895236220945_4686836391232437397_n.webp",
+      "destination": "/wp-content/uploads/2025/07/434381071_367895236220945_4686836391232437397_n.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n.webp",
+      "destination": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-768x576.webp",
+      "destination": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-768x576.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-300x225.webp",
+      "destination": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-300x225.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-1536x1152.webp",
+      "destination": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-1536x1152.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-1024x768.webp",
+      "destination": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-1024x768.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428709959_922696846529229_8699767558094407167_n.webp",
+      "destination": "/wp-content/uploads/2025/07/428709959_922696846529229_8699767558094407167_n.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n.webp",
+      "destination": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-768x1024.webp",
+      "destination": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-768x1024.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-225x300.webp",
+      "destination": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-225x300.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-1152x1536.webp",
+      "destination": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-1152x1536.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n.webp",
+      "destination": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-768x526.webp",
+      "destination": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-768x526.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-300x205.webp",
+      "destination": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-300x205.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-1536x1052.webp",
+      "destination": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-1536x1052.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-1024x701.webp",
+      "destination": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-1024x701.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2025/07/339290940_164220086561724_650240118970743470_n.webp",
+      "destination": "/wp-content/uploads/2025/07/339290940_164220086561724_650240118970743470_n.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240510_181723972-768x578.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240510_181723972-768x578.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240510_181723972-300x226.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240510_181723972-300x226.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240510_181723972-1024x771.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240510_181723972-1024x771.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-768x578.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-768x578.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-300x226.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-300x226.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-1024x771.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-1024x771.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-771x1024.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-771x1024.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-768x1020.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-768x1020.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-226x300.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-226x300.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240506_092035343-768x578.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240506_092035343-768x578.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240506_092035343-300x226.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240506_092035343-300x226.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240506_092035343-1024x771.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240506_092035343-1024x771.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240505_170340197-768x578.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240505_170340197-768x578.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240505_170340197-300x226.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240505_170340197-300x226.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240505_170340197-1024x771.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240505_170340197-1024x771.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240426_165530624-771x1024.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240426_165530624-771x1024.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240426_165530624-768x1020.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240426_165530624-768x1020.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240426_165530624-226x300.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240426_165530624-226x300.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240423_160446901-768x578.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240423_160446901-768x578.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240423_160446901-300x226.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240423_160446901-300x226.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20240423_160446901-1024x771.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20240423_160446901-1024x771.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20220905_222308391-768x576.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20220905_222308391-768x576.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20220905_222308391-300x225.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20220905_222308391-300x225.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20220905_222308391-1024x768.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20220905_222308391-1024x768.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-768x576.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-768x576.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-300x225.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-300x225.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-1024x768.webp",
+      "destination": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-1024x768.optimized.webp",
+      "permanent": true
+    },
+    {
+      "source": "/bike-touring/:path*",
+      "destination": "/touring-bike/",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/page-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/wp-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/jkit-header/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/jkit-footer/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/metform-form/new-form-1753132569/:path*",
+      "destination": "/#form",
+      "permanent": true
+    },
+    {
+      "source": "/metform-form/summit-touring-bike-form-2/:path*",
+      "destination": "/touring-bike/#form",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.summitskibike.com"
+        }
+      ],
+      "destination": "https://summitskibike.com/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ]
+}

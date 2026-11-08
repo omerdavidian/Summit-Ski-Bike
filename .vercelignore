@@ -1,0 +1,8 @@
+private-backup/
+preview/
+local-data/
+scripts/capture.py
+scripts/prepare.py
+node_modules/
+.env*
+.git/

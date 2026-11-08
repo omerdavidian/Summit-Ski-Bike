@@ -1,0 +1,1588 @@
+{
+  "assets": 203,
+  "optimization": [
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-1024x768.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-1024x768.optimized.webp",
+      "before": 172226,
+      "after": 161658,
+      "originalDimensions": [
+        1024,
+        768
+      ],
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-300x225.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-300x225.optimized.webp",
+      "before": 22768,
+      "after": 20912,
+      "originalDimensions": [
+        300,
+        225
+      ],
+      "dimensions": [
+        300,
+        225
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-768x576.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20220504_032418462.MP_-768x576.optimized.webp",
+      "before": 113686,
+      "after": 104700,
+      "originalDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        768,
+        576
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20220905_222308391-1024x768.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20220905_222308391-1024x768.optimized.webp",
+      "before": 226602,
+      "after": 209322,
+      "originalDimensions": [
+        1024,
+        768
+      ],
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20220905_222308391-300x225.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20220905_222308391-300x225.optimized.webp",
+      "before": 22132,
+      "after": 20096,
+      "originalDimensions": [
+        300,
+        225
+      ],
+      "dimensions": [
+        300,
+        225
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20220905_222308391-768x576.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20220905_222308391-768x576.optimized.webp",
+      "before": 133668,
+      "after": 124032,
+      "originalDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        768,
+        576
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240423_160446901-1024x771.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240423_160446901-1024x771.optimized.webp",
+      "before": 249074,
+      "after": 232370,
+      "originalDimensions": [
+        1024,
+        771
+      ],
+      "dimensions": [
+        1024,
+        771
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240423_160446901-300x226.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240423_160446901-300x226.optimized.webp",
+      "before": 25590,
+      "after": 23356,
+      "originalDimensions": [
+        300,
+        226
+      ],
+      "dimensions": [
+        300,
+        226
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240423_160446901-768x578.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240423_160446901-768x578.optimized.webp",
+      "before": 150722,
+      "after": 140388,
+      "originalDimensions": [
+        768,
+        578
+      ],
+      "dimensions": [
+        768,
+        578
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240426_165530624-226x300.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240426_165530624-226x300.optimized.webp",
+      "before": 22030,
+      "after": 20208,
+      "originalDimensions": [
+        226,
+        300
+      ],
+      "dimensions": [
+        226,
+        300
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240426_165530624-768x1020.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240426_165530624-768x1020.optimized.webp",
+      "before": 194922,
+      "after": 180544,
+      "originalDimensions": [
+        768,
+        1020
+      ],
+      "dimensions": [
+        768,
+        1020
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240426_165530624-771x1024.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240426_165530624-771x1024.optimized.webp",
+      "before": 194034,
+      "after": 180028,
+      "originalDimensions": [
+        771,
+        1024
+      ],
+      "dimensions": [
+        771,
+        1024
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240505_170340197-1024x771.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240505_170340197-1024x771.optimized.webp",
+      "before": 345956,
+      "after": 322864,
+      "originalDimensions": [
+        1024,
+        771
+      ],
+      "dimensions": [
+        1024,
+        771
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240505_170340197-300x226.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240505_170340197-300x226.optimized.webp",
+      "before": 32632,
+      "after": 29184,
+      "originalDimensions": [
+        300,
+        226
+      ],
+      "dimensions": [
+        300,
+        226
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240505_170340197-768x578.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240505_170340197-768x578.optimized.webp",
+      "before": 205812,
+      "after": 190910,
+      "originalDimensions": [
+        768,
+        578
+      ],
+      "dimensions": [
+        768,
+        578
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240506_092035343-1024x771.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240506_092035343-1024x771.optimized.webp",
+      "before": 251774,
+      "after": 232444,
+      "originalDimensions": [
+        1024,
+        771
+      ],
+      "dimensions": [
+        1024,
+        771
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240506_092035343-300x226.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240506_092035343-300x226.optimized.webp",
+      "before": 24410,
+      "after": 22262,
+      "originalDimensions": [
+        300,
+        226
+      ],
+      "dimensions": [
+        300,
+        226
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240506_092035343-768x578.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240506_092035343-768x578.optimized.webp",
+      "before": 147408,
+      "after": 136644,
+      "originalDimensions": [
+        768,
+        578
+      ],
+      "dimensions": [
+        768,
+        578
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-226x300.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-226x300.optimized.webp",
+      "before": 21008,
+      "after": 19226,
+      "originalDimensions": [
+        226,
+        300
+      ],
+      "dimensions": [
+        226,
+        300
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-768x1020.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-768x1020.optimized.webp",
+      "before": 201328,
+      "after": 187916,
+      "originalDimensions": [
+        768,
+        1020
+      ],
+      "dimensions": [
+        768,
+        1020
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-771x1024.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240506_104938599.MP_-771x1024.optimized.webp",
+      "before": 201672,
+      "after": 184522,
+      "originalDimensions": [
+        771,
+        1024
+      ],
+      "dimensions": [
+        771,
+        1024
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-1024x771.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-1024x771.optimized.webp",
+      "before": 209310,
+      "after": 195696,
+      "originalDimensions": [
+        1024,
+        771
+      ],
+      "dimensions": [
+        1024,
+        771
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-300x226.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-300x226.optimized.webp",
+      "before": 21644,
+      "after": 19660,
+      "originalDimensions": [
+        300,
+        226
+      ],
+      "dimensions": [
+        300,
+        226
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-768x578.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240509_155724149.RAW-01.MP_.COVER_-768x578.optimized.webp",
+      "before": 127638,
+      "after": 118352,
+      "originalDimensions": [
+        768,
+        578
+      ],
+      "dimensions": [
+        768,
+        578
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240510_181723972-1024x771.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240510_181723972-1024x771.optimized.webp",
+      "before": 300304,
+      "after": 277834,
+      "originalDimensions": [
+        1024,
+        771
+      ],
+      "dimensions": [
+        1024,
+        771
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240510_181723972-300x226.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240510_181723972-300x226.optimized.webp",
+      "before": 28972,
+      "after": 26394,
+      "originalDimensions": [
+        300,
+        226
+      ],
+      "dimensions": [
+        300,
+        226
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2026/05/PXL_20240510_181723972-768x578.webp",
+      "optimized": "/wp-content/uploads/2026/05/PXL_20240510_181723972-768x578.optimized.webp",
+      "before": 179322,
+      "after": 166266,
+      "originalDimensions": [
+        768,
+        578
+      ],
+      "dimensions": [
+        768,
+        578
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/339290940_164220086561724_650240118970743470_n.webp",
+      "optimized": "/wp-content/uploads/2025/07/339290940_164220086561724_650240118970743470_n.optimized.webp",
+      "before": 276096,
+      "after": 225412,
+      "originalDimensions": [
+        2048,
+        1536
+      ],
+      "dimensions": [
+        1920,
+        1440
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-1024x701.webp",
+      "optimized": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-1024x701.optimized.webp",
+      "before": 80984,
+      "after": 72272,
+      "originalDimensions": [
+        1024,
+        701
+      ],
+      "dimensions": [
+        1024,
+        701
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-1536x1052.webp",
+      "optimized": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-1536x1052.optimized.webp",
+      "before": 163804,
+      "after": 146844,
+      "originalDimensions": [
+        1536,
+        1052
+      ],
+      "dimensions": [
+        1536,
+        1052
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-300x205.webp",
+      "optimized": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-300x205.optimized.webp",
+      "before": 9966,
+      "after": 8910,
+      "originalDimensions": [
+        300,
+        205
+      ],
+      "dimensions": [
+        300,
+        205
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-768x526.webp",
+      "optimized": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n-768x526.optimized.webp",
+      "before": 50580,
+      "after": 45652,
+      "originalDimensions": [
+        768,
+        526
+      ],
+      "dimensions": [
+        768,
+        526
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n.webp",
+      "optimized": "/wp-content/uploads/2025/07/425481455_336060646071071_7852342495305856542_n.optimized.webp",
+      "before": 296488,
+      "after": 234110,
+      "originalDimensions": [
+        2048,
+        1402
+      ],
+      "dimensions": [
+        1920,
+        1314
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-1152x1536.webp",
+      "optimized": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-1152x1536.optimized.webp",
+      "before": 240242,
+      "after": 220846,
+      "originalDimensions": [
+        1152,
+        1536
+      ],
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-225x300.webp",
+      "optimized": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-225x300.optimized.webp",
+      "before": 16938,
+      "after": 15674,
+      "originalDimensions": [
+        225,
+        300
+      ],
+      "dimensions": [
+        225,
+        300
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-768x1024.webp",
+      "optimized": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n-768x1024.optimized.webp",
+      "before": 124860,
+      "after": 112534,
+      "originalDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        768,
+        1024
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n.webp",
+      "optimized": "/wp-content/uploads/2025/07/428708240_921943946604519_909734077807910706_n.optimized.webp",
+      "before": 394442,
+      "after": 336984,
+      "originalDimensions": [
+        1536,
+        2048
+      ],
+      "dimensions": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428709959_922696846529229_8699767558094407167_n.webp",
+      "optimized": "/wp-content/uploads/2025/07/428709959_922696846529229_8699767558094407167_n.optimized.webp",
+      "before": 563126,
+      "after": 518594,
+      "originalDimensions": [
+        2048,
+        1490
+      ],
+      "dimensions": [
+        1920,
+        1397
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-1024x768.webp",
+      "optimized": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-1024x768.optimized.webp",
+      "before": 209652,
+      "after": 194018,
+      "originalDimensions": [
+        1024,
+        768
+      ],
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-1536x1152.webp",
+      "optimized": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-1536x1152.optimized.webp",
+      "before": 422390,
+      "after": 387236,
+      "originalDimensions": [
+        1536,
+        1152
+      ],
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-300x225.webp",
+      "optimized": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-300x225.optimized.webp",
+      "before": 25720,
+      "after": 23258,
+      "originalDimensions": [
+        300,
+        225
+      ],
+      "dimensions": [
+        300,
+        225
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-768x576.webp",
+      "optimized": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n-768x576.optimized.webp",
+      "before": 130710,
+      "after": 120060,
+      "originalDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        768,
+        576
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n.webp",
+      "optimized": "/wp-content/uploads/2025/07/428711044_922698449862402_439906204145874386_n.optimized.webp",
+      "before": 664250,
+      "after": 600786,
+      "originalDimensions": [
+        2048,
+        1536
+      ],
+      "dimensions": [
+        1920,
+        1440
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/434381071_367895236220945_4686836391232437397_n.webp",
+      "optimized": "/wp-content/uploads/2025/07/434381071_367895236220945_4686836391232437397_n.optimized.webp",
+      "before": 480706,
+      "after": 427860,
+      "originalDimensions": [
+        1536,
+        2048
+      ],
+      "dimensions": [
+        1440,
+        1920
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/A-Basin.webp",
+      "optimized": "/wp-content/uploads/2025/07/A-Basin.optimized.webp",
+      "before": 5060,
+      "after": 2354,
+      "originalDimensions": [
+        198,
+        132
+      ],
+      "dimensions": [
+        198,
+        132
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/a-magical-switzerland-place-in-world-2025-02-19-23-57-04-utc-copy-scaled.webp",
+      "optimized": "/wp-content/uploads/2025/07/a-magical-switzerland-place-in-world-2025-02-19-23-57-04-utc-copy-scaled.optimized.webp",
+      "before": 316688,
+      "after": 197762,
+      "originalDimensions": [
+        2560,
+        1138
+      ],
+      "dimensions": [
+        1920,
+        854
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Beaver-Creek.webp",
+      "optimized": "/wp-content/uploads/2025/07/Beaver-Creek.optimized.webp",
+      "before": 4438,
+      "after": 2092,
+      "originalDimensions": [
+        198,
+        132
+      ],
+      "dimensions": [
+        198,
+        132
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/bg-gallery-new.png",
+      "optimized": "/wp-content/uploads/2025/07/bg-gallery-new.optimized.webp",
+      "before": 149375,
+      "after": 124906,
+      "originalDimensions": [
+        1920,
+        1180
+      ],
+      "dimensions": [
+        1920,
+        1180
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Breckenridge.webp",
+      "optimized": "/wp-content/uploads/2025/07/Breckenridge.optimized.webp",
+      "before": 3408,
+      "after": 1640,
+      "originalDimensions": [
+        198,
+        132
+      ],
+      "dimensions": [
+        198,
+        132
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Copper-Mountain.webp",
+      "optimized": "/wp-content/uploads/2025/07/Copper-Mountain.optimized.webp",
+      "before": 6138,
+      "after": 2756,
+      "originalDimensions": [
+        198,
+        132
+      ],
+      "dimensions": [
+        198,
+        132
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/cropped-Logo-Circle-192x192.png",
+      "optimized": "/wp-content/uploads/2025/07/cropped-Logo-Circle-192x192.optimized.webp",
+      "before": 7656,
+      "after": 6952,
+      "originalDimensions": [
+        192,
+        192
+      ],
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/cropped-Logo-Circle-270x270.png",
+      "optimized": "/wp-content/uploads/2025/07/cropped-Logo-Circle-270x270.optimized.webp",
+      "before": 12773,
+      "after": 10344,
+      "originalDimensions": [
+        270,
+        270
+      ],
+      "dimensions": [
+        270,
+        270
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/cropped-Logo-Circle-32x32.png",
+      "optimized": "/wp-content/uploads/2025/07/cropped-Logo-Circle-32x32.optimized.webp",
+      "before": 939,
+      "after": 860,
+      "originalDimensions": [
+        32,
+        32
+      ],
+      "dimensions": [
+        32,
+        32
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/DALL\u00b7E-2024-12-21-17.15.39-A-vast-open-field-of-snow-stretching-as-far-as-the-eye-can-see-with-no-trees-or-obstacles-in-sight.-The-snow-is-smooth-and-undisturbed-creating-a_.webp",
+      "optimized": "/wp-content/uploads/2025/07/DALL\u00b7E-2024-12-21-17.15.39-A-vast-open-field-of-snow-stretching-as-far-as-the-eye-can-see-with-no-trees-or-obstacles-in-sight.-The-snow-is-smooth-and-undisturbed-creating-a_.optimized.webp",
+      "before": 85950,
+      "after": 70874,
+      "originalDimensions": [
+        1920,
+        639
+      ],
+      "dimensions": [
+        1920,
+        639
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/DSC03606-1024x1536.webp",
+      "optimized": "/wp-content/uploads/2025/07/DSC03606-1024x1536.optimized.webp",
+      "before": 149314,
+      "after": 130510,
+      "originalDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/DSC03606-1365x2048.webp",
+      "optimized": "/wp-content/uploads/2025/07/DSC03606-1365x2048.optimized.webp",
+      "before": 223782,
+      "after": 164438,
+      "originalDimensions": [
+        1365,
+        2048
+      ],
+      "dimensions": [
+        1280,
+        1920
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/DSC03606-200x300.webp",
+      "optimized": "/wp-content/uploads/2025/07/DSC03606-200x300.optimized.webp",
+      "before": 12708,
+      "after": 11348,
+      "originalDimensions": [
+        200,
+        300
+      ],
+      "dimensions": [
+        200,
+        300
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/DSC03606-683x1024.webp",
+      "optimized": "/wp-content/uploads/2025/07/DSC03606-683x1024.optimized.webp",
+      "before": 79728,
+      "after": 71528,
+      "originalDimensions": [
+        683,
+        1024
+      ],
+      "dimensions": [
+        683,
+        1024
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/DSC03606-768x1152.webp",
+      "optimized": "/wp-content/uploads/2025/07/DSC03606-768x1152.optimized.webp",
+      "before": 95316,
+      "after": 84790,
+      "originalDimensions": [
+        768,
+        1152
+      ],
+      "dimensions": [
+        768,
+        1152
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/DSC03606.webp",
+      "optimized": "/wp-content/uploads/2025/07/DSC03606.optimized.webp",
+      "before": 381400,
+      "after": 204556,
+      "originalDimensions": [
+        1600,
+        2400
+      ],
+      "dimensions": [
+        1280,
+        1920
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/DSC03629.webp",
+      "optimized": "/wp-content/uploads/2025/07/DSC03629.optimized.webp",
+      "before": 327034,
+      "after": 197658,
+      "originalDimensions": [
+        1600,
+        2400
+      ],
+      "dimensions": [
+        1280,
+        1920
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/exported_792D595C-0297-44B2-B7EB-4055BA4A9814-Copy-scaled.webp",
+      "optimized": "/wp-content/uploads/2025/07/exported_792D595C-0297-44B2-B7EB-4055BA4A9814-Copy-scaled.optimized.webp",
+      "before": 531632,
+      "after": 316888,
+      "originalDimensions": [
+        2560,
+        1716
+      ],
+      "dimensions": [
+        1920,
+        1287
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Keystone.webp",
+      "optimized": "/wp-content/uploads/2025/07/Keystone.optimized.webp",
+      "before": 3884,
+      "after": 2120,
+      "originalDimensions": [
+        198,
+        132
+      ],
+      "dimensions": [
+        198,
+        132
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1-1024x215.png.webp",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1-1024x215.png.optimized.webp",
+      "before": 34432,
+      "after": 34070,
+      "originalDimensions": [
+        1024,
+        215
+      ],
+      "dimensions": [
+        1024,
+        215
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1.png",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1.optimized.webp",
+      "before": 33587,
+      "after": 29468,
+      "originalDimensions": [
+        1252,
+        263
+      ],
+      "dimensions": [
+        1252,
+        263
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1024x215.webp",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side-1024x215.optimized.webp",
+      "before": 65486,
+      "after": 29124,
+      "originalDimensions": [
+        1024,
+        215
+      ],
+      "dimensions": [
+        1024,
+        215
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side-300x63.webp",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side-300x63.optimized.webp",
+      "before": 13710,
+      "after": 8278,
+      "originalDimensions": [
+        300,
+        63
+      ],
+      "dimensions": [
+        300,
+        63
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side-768x161.webp",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side-768x161.optimized.webp",
+      "before": 44972,
+      "after": 22004,
+      "originalDimensions": [
+        768,
+        161
+      ],
+      "dimensions": [
+        768,
+        161
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-1024x221.webp",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-1024x221.optimized.webp",
+      "before": 32860,
+      "after": 28096,
+      "originalDimensions": [
+        1024,
+        221
+      ],
+      "dimensions": [
+        1024,
+        221
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-300x65.webp",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-300x65.optimized.webp",
+      "before": 11024,
+      "after": 7398,
+      "originalDimensions": [
+        300,
+        65
+      ],
+      "dimensions": [
+        300,
+        65
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-768x166.webp",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white-768x166.optimized.webp",
+      "before": 25238,
+      "after": 20694,
+      "originalDimensions": [
+        768,
+        166
+      ],
+      "dimensions": [
+        768,
+        166
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white.webp",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side-white.optimized.webp",
+      "before": 23942,
+      "after": 22786,
+      "originalDimensions": [
+        1219,
+        263
+      ],
+      "dimensions": [
+        1219,
+        263
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Logo-Side-by-Side.webp",
+      "optimized": "/wp-content/uploads/2025/07/Logo-Side-by-Side.optimized.webp",
+      "before": 83254,
+      "after": 28600,
+      "originalDimensions": [
+        1252,
+        263
+      ],
+      "dimensions": [
+        1252,
+        263
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Map-Satellite-Resorts-scaled.webp",
+      "optimized": "/wp-content/uploads/2025/07/Map-Satellite-Resorts-scaled.optimized.webp",
+      "before": 619080,
+      "after": 367146,
+      "originalDimensions": [
+        2560,
+        1073
+      ],
+      "dimensions": [
+        1920,
+        805
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20230426_182355014-EDIT2-1024x693.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20230426_182355014-EDIT2-1024x693.optimized.webp",
+      "before": 128756,
+      "after": 111810,
+      "originalDimensions": [
+        1024,
+        693
+      ],
+      "dimensions": [
+        1024,
+        693
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20230426_182355014-EDIT2-scaled.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20230426_182355014-EDIT2-scaled.optimized.webp",
+      "before": 637594,
+      "after": 341822,
+      "originalDimensions": [
+        2560,
+        1733
+      ],
+      "dimensions": [
+        1920,
+        1300
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-1024x1024.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-1024x1024.optimized.webp",
+      "before": 276820,
+      "after": 257864,
+      "originalDimensions": [
+        1024,
+        1024
+      ],
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-150x150.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-150x150.optimized.webp",
+      "before": 7698,
+      "after": 6978,
+      "originalDimensions": [
+        150,
+        150
+      ],
+      "dimensions": [
+        150,
+        150
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-1536x1536.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-1536x1536.optimized.webp",
+      "before": 516338,
+      "after": 479802,
+      "originalDimensions": [
+        1536,
+        1536
+      ],
+      "dimensions": [
+        1536,
+        1536
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-2048x2048.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-2048x2048.optimized.webp",
+      "before": 762832,
+      "after": 624046,
+      "originalDimensions": [
+        2048,
+        2048
+      ],
+      "dimensions": [
+        1920,
+        1920
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-300x300.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-300x300.optimized.webp",
+      "before": 28302,
+      "after": 25986,
+      "originalDimensions": [
+        300,
+        300
+      ],
+      "dimensions": [
+        300,
+        300
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-768x768.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL-768x768.optimized.webp",
+      "before": 165904,
+      "after": 154820,
+      "originalDimensions": [
+        768,
+        768
+      ],
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240120_173745590.PORTRAIT.ORIGINAL.optimized.webp",
+      "before": 870388,
+      "after": 707284,
+      "originalDimensions": [
+        2109,
+        2109
+      ],
+      "dimensions": [
+        1920,
+        1920
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240301_2046469872.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240301_2046469872.optimized.webp",
+      "before": 442216,
+      "after": 413582,
+      "originalDimensions": [
+        1816,
+        1816
+      ],
+      "dimensions": [
+        1816,
+        1816
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240324_202656954-1024x771.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240324_202656954-1024x771.optimized.webp",
+      "before": 135962,
+      "after": 121702,
+      "originalDimensions": [
+        1024,
+        771
+      ],
+      "dimensions": [
+        1024,
+        771
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240324_202656954-1536x1157.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240324_202656954-1536x1157.optimized.webp",
+      "before": 270716,
+      "after": 245788,
+      "originalDimensions": [
+        1536,
+        1157
+      ],
+      "dimensions": [
+        1536,
+        1157
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240324_202656954-2048x1542.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240324_202656954-2048x1542.optimized.webp",
+      "before": 442912,
+      "after": 337006,
+      "originalDimensions": [
+        2048,
+        1542
+      ],
+      "dimensions": [
+        1920,
+        1446
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240324_202656954-300x226.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240324_202656954-300x226.optimized.webp",
+      "before": 15948,
+      "after": 14652,
+      "originalDimensions": [
+        300,
+        226
+      ],
+      "dimensions": [
+        300,
+        226
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240324_202656954-768x578.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240324_202656954-768x578.optimized.webp",
+      "before": 82394,
+      "after": 75438,
+      "originalDimensions": [
+        768,
+        578
+      ],
+      "dimensions": [
+        768,
+        578
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240324_202656954-scaled.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240324_202656954-scaled.optimized.webp",
+      "before": 642684,
+      "after": 355368,
+      "originalDimensions": [
+        2560,
+        1928
+      ],
+      "dimensions": [
+        1920,
+        1446
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-1157x1536.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-1157x1536.optimized.webp",
+      "before": 228572,
+      "after": 198612,
+      "originalDimensions": [
+        1157,
+        1536
+      ],
+      "dimensions": [
+        1157,
+        1536
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-1542x2048.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-1542x2048.optimized.webp",
+      "before": 337404,
+      "after": 257810,
+      "originalDimensions": [
+        1542,
+        2048
+      ],
+      "dimensions": [
+        1446,
+        1920
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-226x300.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-226x300.optimized.webp",
+      "before": 19156,
+      "after": 17714,
+      "originalDimensions": [
+        226,
+        300
+      ],
+      "dimensions": [
+        226,
+        300
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-768x1020.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-768x1020.optimized.webp",
+      "before": 122026,
+      "after": 111698,
+      "originalDimensions": [
+        768,
+        1020
+      ],
+      "dimensions": [
+        768,
+        1020
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-771x1024.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-771x1024.optimized.webp",
+      "before": 123442,
+      "after": 112238,
+      "originalDimensions": [
+        771,
+        1024
+      ],
+      "dimensions": [
+        771,
+        1024
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-scaled.webp",
+      "optimized": "/wp-content/uploads/2025/07/PXL_20240403_041854963.PORTRAIT-EDIT-scaled.optimized.webp",
+      "before": 457876,
+      "after": 271496,
+      "originalDimensions": [
+        1928,
+        2560
+      ],
+      "dimensions": [
+        1446,
+        1920
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Ski-bike-1.webp",
+      "optimized": "/wp-content/uploads/2025/07/Ski-bike-1.optimized.webp",
+      "before": 201108,
+      "after": 188558,
+      "originalDimensions": [
+        1920,
+        1080
+      ],
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Ski-bike-3-1024x821.webp",
+      "optimized": "/wp-content/uploads/2025/07/Ski-bike-3-1024x821.optimized.webp",
+      "before": 143740,
+      "after": 133288,
+      "originalDimensions": [
+        1024,
+        821
+      ],
+      "dimensions": [
+        1024,
+        821
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Ski-bike-3-300x241.webp",
+      "optimized": "/wp-content/uploads/2025/07/Ski-bike-3-300x241.optimized.webp",
+      "before": 16720,
+      "after": 15298,
+      "originalDimensions": [
+        300,
+        241
+      ],
+      "dimensions": [
+        300,
+        241
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Ski-bike-3-768x616.webp",
+      "optimized": "/wp-content/uploads/2025/07/Ski-bike-3-768x616.optimized.webp",
+      "before": 89482,
+      "after": 82876,
+      "originalDimensions": [
+        768,
+        616
+      ],
+      "dimensions": [
+        768,
+        616
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Ski-bike-3.webp",
+      "optimized": "/wp-content/uploads/2025/07/Ski-bike-3.optimized.webp",
+      "before": 239194,
+      "after": 230748,
+      "originalDimensions": [
+        1347,
+        1080
+      ],
+      "dimensions": [
+        1347,
+        1080
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Ski-bike-6.webp",
+      "optimized": "/wp-content/uploads/2025/07/Ski-bike-6.optimized.webp",
+      "before": 195242,
+      "after": 181714,
+      "originalDimensions": [
+        1620,
+        1080
+      ],
+      "dimensions": [
+        1620,
+        1080
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-1024x683.webp",
+      "optimized": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-1024x683.optimized.webp",
+      "before": 98834,
+      "after": 89718,
+      "originalDimensions": [
+        1024,
+        683
+      ],
+      "dimensions": [
+        1024,
+        683
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-1536x1024.webp",
+      "optimized": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-1536x1024.optimized.webp",
+      "before": 171386,
+      "after": 154028,
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-300x200.webp",
+      "optimized": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-300x200.optimized.webp",
+      "before": 14396,
+      "after": 13052,
+      "originalDimensions": [
+        300,
+        200
+      ],
+      "dimensions": [
+        300,
+        200
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-768x512.webp",
+      "optimized": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296-768x512.optimized.webp",
+      "before": 64372,
+      "after": 58390,
+      "originalDimensions": [
+        768,
+        512
+      ],
+      "dimensions": [
+        768,
+        512
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296.webp",
+      "optimized": "/wp-content/uploads/2025/07/snowbowlSkiBike-0296.optimized.webp",
+      "before": 206426,
+      "after": 191680,
+      "originalDimensions": [
+        1620,
+        1080
+      ],
+      "dimensions": [
+        1620,
+        1080
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Steamboat.webp",
+      "optimized": "/wp-content/uploads/2025/07/Steamboat.optimized.webp",
+      "before": 5880,
+      "after": 2660,
+      "originalDimensions": [
+        198,
+        132
+      ],
+      "dimensions": [
+        198,
+        132
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Vail.webp",
+      "optimized": "/wp-content/uploads/2025/07/Vail.optimized.webp",
+      "before": 3444,
+      "after": 1148,
+      "originalDimensions": [
+        198,
+        132
+      ],
+      "dimensions": [
+        198,
+        132
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/winter-landscape-panorama-of-the-ski-resort-with-2025-03-08-14-51-26-utc.webp",
+      "optimized": "/wp-content/uploads/2025/07/winter-landscape-panorama-of-the-ski-resort-with-2025-03-08-14-51-26-utc.optimized.webp",
+      "before": 197922,
+      "after": 184050,
+      "originalDimensions": [
+        1620,
+        1080
+      ],
+      "dimensions": [
+        1620,
+        1080
+      ]
+    },
+    {
+      "original": "/wp-content/uploads/2025/07/Winter-Park.webp",
+      "optimized": "/wp-content/uploads/2025/07/Winter-Park.optimized.webp",
+      "before": 4528,
+      "after": 2016,
+      "originalDimensions": [
+        198,
+        132
+      ],
+      "dimensions": [
+        198,
+        132
+      ]
+    },
+    {
+      "original": "/wp-content/litespeed/avatar/9ed7399e0d6f0635250cd9ee2ed80627.jpg",
+      "optimized": "/wp-content/litespeed/avatar/9ed7399e0d6f0635250cd9ee2ed80627.optimized.webp",
+      "before": 1387,
+      "after": 266,
+      "originalDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ]
+    },
+    {
+      "original": "/wp-content/litespeed/avatar/cd708677879b24b4ed0965c7a7005301.jpg",
+      "optimized": "/wp-content/litespeed/avatar/cd708677879b24b4ed0965c7a7005301.optimized.webp",
+      "before": 1387,
+      "after": 266,
+      "originalDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ]
+    }
+  ],
+  "failures": []
+}
