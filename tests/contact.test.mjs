@@ -10,7 +10,14 @@ const req={headers:{'x-forwarded-for':'192.0.2.10'}};
 test('email templates escape visitor HTML and include text and functional reply destinations',()=>{
  const inquiry={...validateContact({...body,firstName:'<img src=x onerror=alert(1)>',message:'<script>alert(1)</script>'})};
  const owner=renderEmail('owner',inquiry),client=renderEmail('client',inquiry);
- assert.ok(!owner.html.includes('<script>'));assert.ok(owner.html.includes('&lt;script&gt;'));assert.ok(client.html.includes('no longer operating rentals'));assert.ok(owner.html.includes('mailto:alex%40example.com'));assert.ok(client.text.includes('not a reservation'));
+ assert.ok(!owner.html.includes('<script>'));assert.ok(owner.html.includes('&lt;script&gt;'));assert.ok(client.html.includes('no longer operating rentals'));assert.ok(owner.html.includes('mailto:alex@example.com'));assert.ok(client.text.includes('not a reservation'));
+});
+test('reply buttons preserve a literal address separator for Gmail recipients',()=>{
+ const inquiry=validateContact({...body,email:'alex+archive@example.com'});
+ const owner=renderEmail('owner',inquiry),client=renderEmail('client',inquiry);
+ assert.ok(owner.html.includes('href="mailto:alex%2Barchive@example.com?subject=Re%3A%20Summit%20inquiry%20SSB-'));
+ assert.ok(client.html.includes('href="mailto:summitskibike@gmail.com?subject='));
+ assert.ok(!owner.html.includes('%40'));
 });
 for(const invalid of [{email:'someone@example.com\r\nBcc:other@example.com'},{message:'a'},{message:'a'.repeat(5001)},{firstName:''},{interests:'not-an-array'},{submissionId:'bad'}])test('invalid input rejected '+Object.keys(invalid)[0],()=>assert.throws(()=>validateContact({...body,...invalid}),{status:400}));
 test('untrusted origins rejected',()=>assert.throws(()=>requireOrigin({headers:{origin:'https://other.example'}}),{status:403}));
