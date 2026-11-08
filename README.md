@@ -74,7 +74,7 @@ GitHub main is deployed at https://summit-ski-bike.vercel.app on the correct Ver
 
 Controlled live test `SSB-22BBB2A0` passed: a real Turnstile check, one persisted inquiry, one owner delivery ID, and one client delivery ID. Resend reports both messages delivered to the approved Gmail address. Retrying the same saved inquiry after a provider rejection did not create another inquiry. Actual mailbox rendering/replies and explicit token replay rejection remain to be checked. `SITE_URL` temporarily uses the stable Vercel address so email logos work before domain cutover. Change it to the apex after cutover.
 
-Cloudflare forwarding destination `summitskibike@gmail.com` was created with user approval; verification is pending. Incoming MX records have not changed.
+Cloudflare forwarding destination `summitskibike@gmail.com` is verified. The exact-address rule for `info@summitskibike.com` is saved (rule `1a40349881d4481698c01941b9c9ead5`). Zone routing remains disabled and incoming MX records have not changed; forwarding begins only after mail cutover. No catch-all was created.
 
 ## Remaining release gates
 
