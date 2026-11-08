@@ -29,7 +29,7 @@ Email previews (fictional sample details, no messages sent):
 - `api/`: Vercel Node function entrypoints.
 - `lib/`: inquiry validation, durable storage, email templates, and provider calls.
 - `db/schema.sql`: Neon inquiry history and free-tier rate counters.
-- `private-backup/`: local-only original HTML/media and unused migration files. Ignored by Git and Vercel. This is **not** yet a full WordPress/database/mail backup.
+- `private-backup/`: local-only original HTML/media and unused migration files. Ignored by Git and Vercel. Includes a fresh 409 MiB WordPress .wpress backup with SHA-256 and both inquiry CSV exports (221 winter + 6 summer). The backup has not been restore-tested; mailbox preservation is still pending.
 
 The migration utilities under `scripts/` capture and prepare the original site. They are not part of a normal build and should not be rerun over edited content. `migration-report.json` records image dimensions and byte savings. Originals are retained privately. Useful original image paths redirect to their optimized WebP equivalents.
 
@@ -62,19 +62,27 @@ Backend tests cover input rejection, HTML escaping, CAPTCHA verification, origin
 
 ## HostGator removal
 
-Before cancellation, obtain a fresh complete WordPress/database backup, export both MetForm inquiry sets (currently 221 winter + 6 summer at audit), and preserve mailbox contents/aliases if any exist. Historical imports must never send notifications; the database includes `legacy_id` and `imported_at` for a controlled import after inspecting the actual export structure.
+The full WordPress backup and both MetForm inquiry exports (221 winter + 6 summer) are saved privately. Before cancellation, preserve mailbox contents/aliases if any exist and restore-test the backup. Historical imports must never send notifications; the database includes `legacy_id` and `imported_at` for a controlled import if needed.
 
 Move incoming `info@summitskibike.com` mail to Cloudflare Email Routing forwarding to the verified Gmail destination. Replace HostGator MX only after mail preservation. Resend sending authentication belongs on its own subdomain and does not replace the root receiving MX. Confirm forwarding and replies independently before removing HostGator.
 
 Cloudflare currently hosts DNS; AWS holds registration. Preserve the full zone and origin/proxy settings. Update both apex and www, which currently has a separate broken QUIC.cloud target. Point only the website records to the exact targets returned by Vercel. Keep AWS registration. No production DNS or hosting cancellation has been performed by the local build.
 
+## Deployment status (2026-11-07)
+
+GitHub main is deployed at https://summit-ski-bike.vercel.app on the correct Vercel Hobby team. Neon Free `summit-archive` is connected through Vercel and both schema tables are initialized. The Resend sending subdomain is verified; a sending-only key restricted to that subdomain is stored in Vercel. Free Turnstile is configured for the apex, www, and stable Vercel address. Production settings exclude localhost. Historical inquiries remain in private local exports; no historical notifications have been sent. Custom-domain DNS and HostGator remain unchanged.
+
+Controlled live test `SSB-22BBB2A0` passed: a real Turnstile check, one persisted inquiry, one owner delivery ID, and one client delivery ID. Resend reports both messages delivered to the approved Gmail address. Retrying the same saved inquiry after a provider rejection did not create another inquiry. Actual mailbox rendering/replies and explicit token replay rejection remain to be checked. `SITE_URL` temporarily uses the stable Vercel address so email logos work before domain cutover. Change it to the apex after cutover.
+
+Cloudflare forwarding destination `summitskibike@gmail.com` was created with user approval; verification is pending. Incoming MX records have not changed.
+
 ## Remaining release gates
 
 - Review the preview and branded email designs.
-- Confirm the Vercel Hobby project and Neon Free integration.
-- Configure and test Resend, Turnstile, database schema, and inbound forwarding.
-- Export/reconcile historical inquiries and a complete restorable backup.
-- Verify real message delivery and CAPTCHA token replay rejection.
+- Verify inbound forwarding and mailbox preservation.
+- Restore-test the complete backup; reconcile private historical exports if importing.
+- Verify email-client rendering/replies and CAPTCHA token replay rejection.
+- Decide whether to retain newsletter signup; the existing Mailchimp integration is not configured and currently reports unavailability.
 - Approve the production domain switch, then retire HostGator after independent site/mail checks.
 
 Customer browser appearance has been checked locally. Actual Gmail/Outlook/Apple Mail rendering and delivery still require controlled email tests. Email logos use PNG for broad mail-client compatibility; website photography uses optimized WebP where it saves space.

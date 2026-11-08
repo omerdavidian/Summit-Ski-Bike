@@ -92,7 +92,7 @@ document.querySelectorAll('.jkit-video-popup-btn').forEach(link=>link.addEventLi
 const forms=[...document.querySelectorAll('[data-contact],[data-newsletter]')];
 let config;
 const widgetIds=new WeakMap();
-try{const response=await fetch('/api/config');if(response.ok)config=await response.json();}catch{}
+try{const response=await fetch('/api/config/',{cache:'no-store'});if(response.ok)config=await response.json();}catch{}
 if(config?.turnstileSiteKey){
   window.summitCaptchaReady=()=>forms.forEach(form=>{
     const slot=form.querySelector('.captcha-slot');if(slot)widgetIds.set(form,window.turnstile.render(slot,{sitekey:config.turnstileSiteKey,action:form.hasAttribute('data-contact')?'contact':'newsletter',theme:'light'}));
@@ -105,12 +105,13 @@ forms.forEach(form=>{
     event.preventDefault();if(busy||!form.reportValidity())return;
     const button=form.querySelector('button[type=submit]');const status=form.querySelector('.form-status');
     const body=Object.fromEntries(new FormData(form));body.interests=new FormData(form).getAll('interests');body.submissionId=submissionId;
+    if(config?.turnstileSiteKey&&!body['cf-turnstile-response']){status.dataset.state='error';status.textContent='Please wait for the spam check to finish, then send your message.';return;}
     busy=true;button.disabled=true;status.dataset.state='';status.textContent='Sending your message…';
     try{
       const response=await fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
       const result=await response.json();if(!response.ok)throw new Error(result.error||'Unable to send. Please try again.');
       status.dataset.state='success';status.textContent=result.message;form.reset();submissionId=crypto.randomUUID();
-    }catch(error){status.dataset.state='error';status.textContent=error.message+' You can also email summitskibike@gmail.com.';}
+    }catch(error){status.dataset.state='error';status.textContent=error.message+(error.message.includes('summitskibike@gmail.com')?'':' You can also email summitskibike@gmail.com.');}
     finally{busy=false;button.disabled=false;const widgetId=widgetIds.get(form);if(window.turnstile&&widgetId!==undefined)window.turnstile.reset(widgetId);}
   });
 });
