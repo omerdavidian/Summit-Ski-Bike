@@ -54,10 +54,21 @@ document.querySelectorAll('.jkit-accordion').forEach(accordion=>{
   cards.forEach(card=>{
     const trigger=card.querySelector('.card-header-button'),panel=card.querySelector('.card-expand'); if(!trigger||!panel)return;
     panel.hidden=!card.classList.contains('expand');trigger.setAttribute('aria-expanded',String(!panel.hidden));
+    const setExpanded=(target,expanded)=>{
+      const answer=target.querySelector('.card-expand'),button=target.querySelector('.card-header-button');if(!answer)return;
+      const from=answer.hidden?0:answer.getBoundingClientRect().height;
+      answer.getAnimations().forEach(animation=>animation.cancel());
+      target.classList.toggle('expand',expanded);button?.setAttribute('aria-expanded',String(expanded));
+      answer.hidden=false;answer.inert=!expanded;
+      const to=expanded?answer.scrollHeight:0;
+      if(reducedMotion){answer.hidden=!expanded;return;}
+      const animation=answer.animate([{height:from+'px',opacity:from?1:0,overflow:'hidden'},{height:to+'px',opacity:expanded?1:0,overflow:'hidden'}],{duration:110,easing:'ease-out'});
+      animation.onfinish=()=>{answer.hidden=!expanded;};
+    };
     trigger.addEventListener('click',event=>{
-      event.preventDefault();const expanded=panel.hidden;
-      cards.forEach(other=>{const answer=other.querySelector('.card-expand'); if(answer) answer.hidden=true;other.classList.remove('expand');other.querySelector('.card-header-button')?.setAttribute('aria-expanded','false');});
-      panel.hidden=!expanded;card.classList.toggle('expand',expanded);trigger.setAttribute('aria-expanded',String(expanded));
+      event.preventDefault();const expanded=trigger.getAttribute('aria-expanded')!=='true';
+      cards.forEach(other=>{if(other!==card&&other.classList.contains('expand'))setExpanded(other,false);});
+      setExpanded(card,expanded);
     });
     trigger.addEventListener('keydown',event=>{if(event.key===' '){event.preventDefault();trigger.click();}});
   });

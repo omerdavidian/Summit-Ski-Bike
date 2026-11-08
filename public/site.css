@@ -13,3 +13,19 @@ body .elementor-button{background-color:#176aa6!important;color:#fff!important}b
 .slideshow-pause{top:110px;bottom:auto}@media(max-width:767px){.slideshow-pause{top:100px;right:12px;font-size:12px;padding:6px 10px}}
 a:focus-visible,button:focus-visible{outline:3px solid var(--summit-accent);outline-offset:4px}.jkit-menu-wrapper.is-open a:focus-visible{outline-offset:-3px}.card-header-button:focus-visible{outline-offset:-3px}.summit-lightbox button:focus-visible{outline-color:#fff}.skip-link{z-index:10002}.summit-form button{background:#176aa6}.archive-contact-link{background:#176aa6}body[data-season=summer] .summit-form button,body[data-season=summer] .archive-contact-link{background:#3d732e}.summit-form textarea{resize:vertical;min-height:150px}.form-status:focus{outline:none}.slideshow-pause{position:absolute;right:16px;bottom:16px;z-index:4;background:#001d3de8;border:1px solid #fff9;color:#fff;padding:8px 12px;border-radius:4px;font:13px/1.5 Arial,sans-serif;cursor:pointer}body[data-season=summer] .slideshow-pause{background:#0e2e08e8}
 @media(max-width:1024px){body .jkit-menu-wrapper.is-open .jkit-menu>li>a{color:#10223d!important}body .jkit-menu-wrapper.is-open .jkit-menu>li:hover>a,body .jkit-menu-wrapper.is-open .jkit-menu>li>a:focus-visible{color:#176aa6!important}body[data-season=summer] .jkit-menu-wrapper.is-open .jkit-menu>li:hover>a,body[data-season=summer] .jkit-menu-wrapper.is-open .jkit-menu>li>a:focus-visible{color:#3d732e!important}}.form-privacy a{color:#176aa6}body[data-season=summer] .form-privacy a{color:#3d732e}
+
+/* Keep slideshow controls out of Elementor's stretched layout. */
+body .summit-slideshow > button.slideshow-pause{position:absolute;inset:110px 16px auto auto;width:auto;height:36px;min-height:36px;max-height:36px;align-self:flex-start;flex:0 0 auto;padding:6px 12px;background:#001d3de8;border:1px solid #fff9;border-radius:4px;color:#fff;font:13px/1.5 Arial,sans-serif}
+body[data-season=summer] .summit-slideshow > button.slideshow-pause{background:#0e2e08e8}
+body .navbar > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:center;align-items:center}
+body .navbar .elementor-widget-image img{display:block}
+body .navbar .elementor-widget-image a{display:inline-block;vertical-align:middle}
+@media(min-width:1025px){
+body .navbar .elementor-element-bbe8d68,body .navbar .elementor-element-18f7a5f3,body .navbar .elementor-element-18f7a5f3 > .e-con-inner{display:flex;flex-direction:row-reverse;align-items:center;justify-content:center;gap:20px;width:100%;padding:0;flex-wrap:nowrap}
+body .navbar .elementor-element-bbe8d68 > .elementor-widget,body .navbar .elementor-element-18f7a5f3 .elementor-widget{width:auto;flex:0 0 auto;margin:0;align-self:center}
+body .navbar .phone-link{white-space:nowrap}body .navbar p{margin:0}
+}
+/* Each price card ends after its own content, rather than stretching to the longest list. */
+body .elementor-element-ec48bf5 > .elementor-container,body .elementor-element-7434fb05 > .elementor-container{align-items:flex-start}
+body :is(.elementor-element-ec48bf5,.elementor-element-7434fb05) > .elementor-container > .elementor-column > .elementor-widget-wrap{height:auto;min-height:0;align-content:flex-start;padding-bottom:25px}
+@media(max-width:767px){body .summit-slideshow > button.slideshow-pause{top:100px;right:12px;font-size:12px}}
