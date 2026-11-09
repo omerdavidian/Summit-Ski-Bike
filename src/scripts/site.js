@@ -41,11 +41,27 @@ document.querySelectorAll('[data-slides]').forEach(section=>{
     if(index===0) img.fetchPriority='high'; else img.loading='lazy';
     slides.append(img);return img;
   });section.prepend(slides);
-  let index=0,paused=false;
+  let index=0,paused=false,zoomIn=true;
+  const zooms=new Map();
+  const startZoom=image=>{
+    zooms.get(image)?.cancel();
+    const scales=zoomIn?[1.03,1.1]:[1.1,1.03];zoomIn=!zoomIn;
+    image.dataset.zoom=scales[0]<scales[1]?'in':'out';
+    const animation=image.animate(scales.map(scale=>({transform:`scale(${scale})`})),{duration:5600,easing:'linear',fill:'forwards'});
+    zooms.set(image,animation);
+  };
   if(!reducedMotion&&images.length>1){
+    startZoom(images[0]);images[0].style.zIndex='2';
     const pause=document.createElement('button');pause.type='button';pause.className='slideshow-pause';pause.textContent='Pause slideshow';pause.setAttribute('aria-pressed','false');
-    pause.addEventListener('click',()=>{paused=!paused;pause.setAttribute('aria-pressed',String(paused));pause.textContent=paused?'Resume slideshow':'Pause slideshow';images.forEach(image=>image.style.animationPlayState=paused?'paused':'running');});section.append(pause);
-    setInterval(()=>{if(document.hidden||paused)return;images[index].classList.remove('is-active');index=(index+1)%images.length;images[index].classList.add('is-active');},5000);
+    pause.addEventListener('click',()=>{paused=!paused;pause.setAttribute('aria-pressed',String(paused));pause.textContent=paused?'Resume slideshow':'Pause slideshow';zooms.forEach(animation=>paused?animation.pause():animation.play());});section.append(pause);
+    setInterval(()=>{
+      if(document.hidden||paused)return;
+      const outgoing=images[index];outgoing.style.zIndex='1';
+      index=(index+1)%images.length;const incoming=images[index];
+      startZoom(incoming);incoming.style.zIndex='2';incoming.classList.add('is-active');
+      // Keep the old image and its transform intact until the new image fully covers it.
+      setTimeout(()=>{outgoing.classList.remove('is-active');outgoing.style.zIndex='0';},550);
+    },5000);
   }
 });
 
