@@ -41,28 +41,41 @@ document.querySelectorAll('[data-slides]').forEach(section=>{
     if(index===0) img.fetchPriority='high'; else img.loading='lazy';
     slides.append(img);return img;
   });section.prepend(slides);
-  let index=0,paused=false,zoomIn=true;
+  let index=0,paused=reducedMotion,zoomIn=true,timer;
   const zooms=new Map();
   const startZoom=image=>{
+    if(reducedMotion)return;
     zooms.get(image)?.cancel();
     const scales=zoomIn?[1.03,1.1]:[1.1,1.03];zoomIn=!zoomIn;
     image.dataset.zoom=scales[0]<scales[1]?'in':'out';
     const animation=image.animate(scales.map(scale=>({transform:`scale(${scale})`})),{duration:5600,easing:'linear',fill:'forwards'});
-    zooms.set(image,animation);
+    if(paused)animation.pause();zooms.set(image,animation);
   };
-  if(!reducedMotion&&images.length>1){
+  if(images.length>1){
     startZoom(images[0]);images[0].style.zIndex='2';
-    const pause=document.createElement('button');pause.type='button';pause.className='slideshow-pause';pause.textContent='Pause slideshow';pause.setAttribute('aria-pressed','false');
-    pause.addEventListener('click',()=>{paused=!paused;pause.setAttribute('aria-pressed',String(paused));pause.textContent=paused?'Resume slideshow':'Pause slideshow';zooms.forEach(animation=>paused?animation.pause():animation.play());});section.append(pause);
-    setInterval(()=>{
-      if(document.hidden||paused)return;
+    const controls=document.createElement('div');controls.className='slideshow-controls';controls.setAttribute('role','group');controls.setAttribute('aria-label','Hero slideshow controls');
+    const dots=images.map((image,i)=>{
+      const dot=document.createElement('button');dot.type='button';dot.className='slideshow-dot';dot.setAttribute('aria-label',`Show slide ${i+1} of ${images.length}`);dot.addEventListener('click',()=>{showSlide(i);schedule();});controls.append(dot);return dot;
+    });
+    const toggle=document.createElement('button');toggle.type='button';toggle.className='slideshow-toggle';
+    const icon=document.createElement('span');icon.className='slideshow-toggle-icon';icon.setAttribute('aria-hidden','true');toggle.append(icon);controls.append(toggle);section.append(controls);
+    const syncControls=()=>{
+      dots.forEach((dot,i)=>{if(i===index)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current');});
+      toggle.setAttribute('aria-label',paused?'Play slideshow':'Pause slideshow');toggle.setAttribute('aria-pressed',String(paused));
+    };
+    const showSlide=next=>{
+      if(next===index)return;
       const outgoing=images[index];outgoing.style.zIndex='1';
-      index=(index+1)%images.length;const incoming=images[index];
-      startZoom(incoming);incoming.style.zIndex='2';incoming.classList.add('is-active');
-      // Keep the old image and its transform intact until the new image fully covers it.
-      setTimeout(()=>{outgoing.classList.remove('is-active');outgoing.style.zIndex='0';},550);
-    },5000);
+      index=next;const incoming=images[index];
+      startZoom(incoming);incoming.style.zIndex='2';incoming.classList.add('is-active');syncControls();
+      // Keep the old image at its current zoom until the new image fully covers it.
+      setTimeout(()=>{if(outgoing!==images[index]){outgoing.classList.remove('is-active');outgoing.style.zIndex='0';}},550);
+    };
+    const schedule=()=>{clearTimeout(timer);timer=setTimeout(()=>{if(!document.hidden&&!paused)showSlide((index+1)%images.length);schedule();},5000);};
+    toggle.addEventListener('click',()=>{paused=!paused;zooms.forEach(animation=>paused?animation.pause():animation.play());syncControls();schedule();});
+    syncControls();schedule();
   }
+
 });
 
 document.querySelectorAll('.jkit-accordion').forEach(accordion=>{

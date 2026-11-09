@@ -29,3 +29,18 @@ body .navbar .phone-link{white-space:nowrap}body .navbar p{margin:0}
 body .elementor-element-ec48bf5 > .elementor-container,body .elementor-element-7434fb05 > .elementor-container{align-items:flex-start}
 body :is(.elementor-element-ec48bf5,.elementor-element-7434fb05) > .elementor-container > .elementor-column > .elementor-widget-wrap{height:auto;min-height:0;align-content:flex-start;padding-bottom:25px}
 @media(max-width:767px){body .summit-slideshow > button.slideshow-pause{top:100px;right:12px;font-size:12px}}
+
+/* Compact, keyboard-accessible hero navigation above the overlapping feature cards. */
+body .summit-slideshow > .slideshow-controls{position:absolute;inset:auto auto 120px 50%;transform:translateX(-50%);z-index:5;display:flex;align-items:center;gap:1px;width:max-content;height:40px;min-height:0;padding:0 7px;border:1px solid #ffffff38;border-radius:24px;background:#00101e8c;box-shadow:0 2px 10px #0002;line-height:1}
+body .slideshow-controls button{position:relative;display:grid;place-items:center;flex:0 0 auto;width:28px;height:36px;min-height:0;padding:0;border:0;border-radius:18px;background:transparent;color:white;cursor:pointer}
+.slideshow-dot::before{content:'';display:block;width:7px;height:7px;border-radius:9px;background:#ffffff80;transition:width .2s,background-color .2s}
+.slideshow-dot[aria-current=true]::before{width:17px;background:#fff}
+.slideshow-dot:hover::before{background:#fff}
+body .slideshow-controls .slideshow-toggle{margin-left:5px;border-left:1px solid #ffffff45;border-radius:0;width:33px}
+.slideshow-toggle-icon{display:block;width:10px;height:12px;border-left:3px solid #fff;border-right:3px solid #fff}
+.slideshow-toggle[aria-pressed=true] .slideshow-toggle-icon{width:0;height:0;border:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:9px solid #fff;margin-left:3px}
+body .slideshow-controls button:focus-visible{outline:2px solid #fff;outline-offset:0}
+@media(max-width:767px){body .summit-slideshow > .slideshow-controls{bottom:120px}}
+@media(prefers-reduced-motion:reduce){.slideshow-dot::before,.summit-slides img{transition:none}}
+
+body .slideshow-controls button:hover,body .slideshow-controls button:focus,body .slideshow-controls button:active{background:transparent!important;color:#fff}
